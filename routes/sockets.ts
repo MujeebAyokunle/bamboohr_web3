@@ -10,7 +10,7 @@ const providersenv: string[] =
   env.ALCHEMYWSLURL || env.INFURAWSLURL
     ? [env.ALCHEMYWSLURL || "", env.INFURAWSLURL || ""]
     : [];
-console.log("wslurl", providersenv);
+
 const providers = providersenv.map(
   (url: string) => new ethers.WebSocketProvider(url)
 );
