@@ -59,10 +59,12 @@ socketRef.current = io(`https://bamboohr-0a2aba2f352b.herokuapp.com`, {
 ```
 
 ## Run
-### Local
+#### Install node modules
+npm install
+#### Local
 npm run dev
-### Build
+#### Build
 npm run build
 
-### Start
+#### Start
 npm run start
