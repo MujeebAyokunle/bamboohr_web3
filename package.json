@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rimraf dist && npm install typescript && npx tsc",
+    "build": "rimraf dist && npx tsc",
     "start": "nodemon dist/index.js",
     "predev": "npm run build",
     "dev": "concurrently \"npx tsc -w\" \"nodemon dist/index.js\""
@@ -34,6 +34,7 @@
     "reflect-metadata": "^0.2.2",
     "rimraf": "^5.0.7",
     "socket.io": "^4.7.5",
-    "typeorm": "^0.3.20"
+    "typeorm": "^0.3.20",
+    "typescript": "^5.4.5"
   }
 }
