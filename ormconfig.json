@@ -1,0 +1,25 @@
+{
+    "type": "mysql",
+    "host": "localhost",
+    "port": 4306,
+    "username": "root3",
+    "password": "mujeeb123456",
+    "database": "web3assignment",
+    "synchronize": true,
+    "logging": false,
+    "entities": [
+      "src/entity/**/*.ts"
+    ],
+    "migrations": [
+      "src/migration/**/*.ts"
+    ],
+    "subscribers": [
+      "src/subscriber/**/*.ts"
+    ],
+    "cli": {
+      "entitiesDir": "src/entity",
+      "migrationsDir": "src/migration",
+      "subscribersDir": "src/subscriber"
+    }
+  }
+  
