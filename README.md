@@ -45,7 +45,18 @@ Web3 assignment from bamboohr
   },
 }
 ```
-
+#### Socket connection using socket-io-client
+```javascript
+socketRef.current = io(`https://bamboohr-0a2aba2f352b.herokuapp.com`, {
+            extraHeaders: {
+                Authorization: `Bearer ${token}`
+            }
+        }).on('connect', () => {
+          console.log("connected")
+        }).on('disconnect', () => {
+          console.log("disconnected")
+        })
+```
 
 ## Run
 ### Local
@@ -53,5 +64,5 @@ npm run dev
 ### Build
 npm run build
 
-###Start
+### Start
 npm run start
