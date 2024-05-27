@@ -68,3 +68,5 @@ npm run build
 
 #### Start
 npm run start
+
+NB: I intentionally pushed the database credentials to give you an easy access to a test database.
